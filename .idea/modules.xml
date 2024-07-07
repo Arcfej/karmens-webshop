@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/karmens-webshop.iml" filepath="$PROJECT_DIR$/.idea/karmens-webshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/karmens-webstore/karmens-webstore.iml" filepath="$PROJECT_DIR$/karmens-webstore/karmens-webstore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/karmens-webstore-storefront/karmens-webstore-storefront.iml" filepath="$PROJECT_DIR$/karmens-webstore-storefront/karmens-webstore-storefront.iml" />
+    </modules>
+  </component>
+</project>
