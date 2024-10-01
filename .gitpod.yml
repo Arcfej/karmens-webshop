@@ -1,0 +1,26 @@
+image: gitpod/workspace-postgres
+
+tasks:
+  - name: run Evershop
+#    openMode: split-left
+    init: |
+      npm install
+#      pg_start
+#      sudo -u postgres createuser --superuser postgres
+#      sleep 5
+#      sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
+#      psql -U postgres -c "CREATE DATABASE evershop;"
+#      psql -U postgres -c "CREATE USER admin WITH ENCRYPTED PASSWORD 'admin';"
+#      psql -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE evershop TO admin;"
+    command: |
+      pg_start
+      npm run setup
+      npm run dev
+
+ports:
+  - name: storefront
+    port: 3000
+    onOpen: open-preview
+  - name: database
+    port: 5432
+    onOpen: ignore
